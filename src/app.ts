@@ -5,6 +5,7 @@ import express, {
 } from "express";
 
 import { userRoute } from "./modules/user/user.route";
+import { profileRoute } from "./modules/profile/profile.route";
 
 const app: Application = express();
 
@@ -21,6 +22,7 @@ app.get("/user", (req: Request, res: Response) => {
 });
 
 app.use("/api/users",userRoute);
+app.use("/api/profile",profileRoute);
 
 
 
