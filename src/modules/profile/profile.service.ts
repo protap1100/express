@@ -1,7 +1,7 @@
 import { pool } from "../../db";
 
 const createProfileIntoDB = async (payload: any) => {
-  console.log(payload);
+//   console.log(payload);
   const { user_id, bio, address, phone, gender } = payload;
   // first check if the user exist or not
 
