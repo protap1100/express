@@ -1,12 +1,13 @@
-import { Router} from "express";
+import { Router, type NextFunction } from "express";
 import { userController } from "./user.controller";
+import auth from "../../middleware/auth";
 
 const router = Router();
 
-router.post("/",userController.createUser);
-router.get("/",userController.getAllUser);
-router.get("/:id",userController.getSingleUser);
-router.put("/:id",userController.updateUser);
-router.delete("/:id",userController.deleteUser);
+router.post("/", userController.createUser);
+router.get("/", auth(), userController.getAllUser);
+router.get("/:id", userController.getSingleUser);
+router.put("/:id", userController.updateUser);
+router.delete("/:id", userController.deleteUser);
 
-export const userRoute = router
+export const userRoute = router;

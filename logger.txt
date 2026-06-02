@@ -8,3 +8,33 @@ Method ->GET - URL ->1779805914146 - Time:-> /user
 Method ->GET - URL ->1779805920439 - Time:-> /api/users 
 
 Method ->GET - URL ->1779807833977 - Time:-> / 
+
+Method ->GET - URL ->1780417571766 - Time:-> / 
+
+Method ->GET - URL ->1780417754056 - Time:-> /user 
+
+Method ->GET - URL ->1780417755171 - Time:-> /favicon.ico 
+
+Method ->GET - URL ->1780417781977 - Time:-> /users 
+
+Method ->GET - URL ->1780417846784 - Time:-> /users 
+
+Method ->GET - URL ->1780417863948 - Time:-> /api/users 
+
+Method ->GET - URL ->1780417877059 - Time:-> /api/users 
+
+Method ->GET - URL ->1780417882436 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418247811 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418488761 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418520117 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418665688 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418687347 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418699152 - Time:-> /api/users 
+
+Method ->GET - URL ->1780418713218 - Time:-> /api/users 
