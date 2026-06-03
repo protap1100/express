@@ -274,3 +274,21 @@ Method ->GET - URL ->1780499074009 - Time:-> /
 Method ->GET - URL ->1780499078584 - Time:-> /api/users 
 
 Method ->GET - URL ->1780499078828 - Time:-> /favicon.ico 
+
+Method ->POST - URL ->1780507442310 - Time:-> /api/auth/login 
+
+Method ->POST - URL ->1780507654918 - Time:-> /api/auth/login 
+
+Method ->POST - URL ->1780507849948 - Time:-> /api/auth/refresh-token 
+
+Method ->POST - URL ->1780508597793 - Time:-> /api/auth/refresh-token 
+
+Method ->GET - URL ->1780508977607 - Time:-> /api/users 
+
+Method ->GET - URL ->1780508989474 - Time:-> /api/users 
+
+Method ->GET - URL ->1780509004591 - Time:-> /api/users 
+
+Method ->GET - URL ->1780509031769 - Time:-> /api/users 
+
+Method ->GET - URL ->1780509227573 - Time:-> /api/users 
