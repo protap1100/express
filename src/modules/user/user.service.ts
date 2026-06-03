@@ -3,16 +3,16 @@ import { pool } from "../../db";
 import type { IUser } from "./user.interface";
 
 const createUserInfoDB = async (payLoad: IUser) => {
-  const { name, email, password, age } = payLoad;
+  const { name, email, password, age,role } = payLoad;
   const hashPassword = await bcrypt.hash(password,10);
 
   const result = await pool.query(
     `
-          INSERT INTO users (name,email,password,age)
-          VALUES ($1,$2,$3,$4)
+          INSERT INTO users (name,email,password,age,role)
+          VALUES ($1,$2,$3,$4,COALESCE($5,'user'))
           RETURNING * 
         `,
-    [name, email, hashPassword, age],
+    [name, email, hashPassword, age,role],
   );
 
   delete result.rows[0].password;
