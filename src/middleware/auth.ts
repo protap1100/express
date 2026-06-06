@@ -54,7 +54,6 @@ const auth = (...roles: ROLES[]) => {
           message: "You do not have permission to access this resource",
         });
       }
-
       req.user = decoded;
       next();
     } catch (error) {
