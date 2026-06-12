@@ -21,9 +21,7 @@ const auth = (...roles: ROLES[]) => {
         token as string,
         config.secret as string,
       ) as JwtPayload;
-
-      console.log("Decoded", decoded);
-
+      // console.log("Decoded", decoded);
       const userData = await pool.query(
         `
         SELECT * FROM users WHERE email =$1`,
@@ -38,23 +36,19 @@ const auth = (...roles: ROLES[]) => {
           message: "User not found",
         });
       }
-
       if (!user.is_active) {
         res.status(403).json({
           success: false,
           message: "Forbidden access",
         });
       }
-
       // console.log("Auth role: ", user.role);
-
       if (roles.length && !roles.includes(user.role)) {
         res.status(403).json({
           success: false,
           message: "You do not have permission to access this resource",
         });
       }
-
       req.user = decoded;
       next();
     } catch (error) {
