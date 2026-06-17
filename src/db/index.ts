@@ -15,7 +15,7 @@ export const initDB = async () => {
             password TEXT NOT NULL,
             is_active BOOLEAN DEFAULT TRUE,
             age INT,
-            role VARCHAR(10) DEFAULT 'user',
+            role VARCHAR(20) DEFAULT 'user',
             created_at TIMESTAMP DEFAULT NOW(),
             updated_at TIMESTAMP DEFAULT NOW()
           )
@@ -26,8 +26,8 @@ export const initDB = async () => {
         user_id INT UNIQUE REFERENCES users(id) ON DELETE CASCADE,
         bio TEXT,
         address TEXT,
-        phone VARCHAR(15),
-        gender VARCHAR(15),
+        phone VARCHAR(20),
+        gender VARCHAR(20),
         created_at TIMESTAMP DEFAULT NOW(),
         updated_at TIMESTAMP DEFAULT NOW()
       )
