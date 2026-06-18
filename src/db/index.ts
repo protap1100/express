@@ -26,8 +26,8 @@ export const initDB = async () => {
         user_id INT UNIQUE REFERENCES users(id) ON DELETE CASCADE,
         bio TEXT,
         address TEXT,
-        phone VARCHAR(20),
-        gender VARCHAR(20),
+        phone VARCHAR(40),
+        gender VARCHAR(30),
         created_at TIMESTAMP DEFAULT NOW(),
         updated_at TIMESTAMP DEFAULT NOW()
       )
