@@ -7,7 +7,7 @@ const port = config.port;
 const main = async () => {
   await initDB();
   app.listen(port, () => {
-    console.log(`app is runnging on port ${config.port}`);
+    console.log(`app is listening on port ${config.port}`);
   });
 };
 
